@@ -6,11 +6,13 @@ import About from './Pages/About/About';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import ShowUsers from './Pages/ShowUser/ShowUsers';
+import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to my wareHouse</h1>
+      <Header></Header>
+      <h1 className="text-3xl mt-2">Welcome to my wareHouse</h1>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
