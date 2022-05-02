@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+import 'tw-elements';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,6 +11,7 @@ root.render(
   <BrowserRouter>
     <React.StrictMode>
       <App />
+      <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
     </React.StrictMode>
   </BrowserRouter>
 );

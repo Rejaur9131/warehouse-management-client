@@ -30,11 +30,11 @@ const Login = () => {
 
   return (
     <div className="login-page w-80 mx-auto mt-8">
-      <div className="form bg-gray-100 py-5 rounded-md shadow-lg">
-        <form onSubmit={handleSubmit} className="login-form py-10">
+      <div className="form bg-gray-200 py-4 rounded-md shadow-lg mx-5 mb-12">
+        <form onSubmit={handleSubmit} className="login-form py-4">
           <input className="bg-slate-300 p-2 mb-4 outline-none rounded" type="email" ref={emailRef} placeholder="Email address" />
           <br />
-          <input className="bg-slate-200 p-2 mb-4 outline-none rounded" type="password" ref={passwordRef} placeholder="Password" />
+          <input className="bg-slate-300 p-2 mb-4 outline-none rounded" type="password" ref={passwordRef} placeholder="Password" />
           <br />
           <button className="bg-gray-800 text-white py-2 px-6 mb-4 rounded-md" type="submit">
             Login

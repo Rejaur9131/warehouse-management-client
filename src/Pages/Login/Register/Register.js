@@ -19,9 +19,9 @@ const Register = () => {
 
   const navigate = useNavigate();
   return (
-    <div className="w-80 mx-auto mt-4 -mb-6 ">
-      <div className="form bg-gray-200 py-2 rounded-md shadow-lg ">
-        <form onSubmit={handleSubmit} className="register-form ">
+    <div className="w-80 mx-auto mt-4 -mb-6">
+      <div className="form bg-gray-200 py-5 rounded-md shadow-lg mx-5 mb-24 ">
+        <form onSubmit={handleSubmit} className="py-5">
           <input className="bg-slate-300 p-2 mb-3 outline-none rounded" type="text" placeholder="Name" />
           <br />
           <input className="bg-slate-300 p-2 mb-3 outline-none rounded" type="email" ref={emailRef} placeholder="Email address" />
