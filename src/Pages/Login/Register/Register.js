@@ -19,7 +19,7 @@ const Register = () => {
 
   const navigate = useNavigate();
   return (
-    <div className=" login-page w-80 mx-auto mt-20">
+    <div className=" login-page w-80 mx-auto mt-10 ">
       <div className="form bg-green-100 py-5 rounded-md shadow-lg ">
         <form onSubmit={handleSubmit} className="register-form py-10">
           <input className="bg-slate-200 p-2 mb-4 outline-none rounded" type="text" placeholder="Name" />
