@@ -21,6 +21,7 @@ const ShowUsers = () => {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
           }
         });
+
         setUser(data);
       } catch (error) {
         // console.error(error);
@@ -31,8 +32,8 @@ const ShowUsers = () => {
 
   return (
     <div>
-      <h2>User: {user1.length} </h2>
-      <h3>Name: {user1[0]?.name}</h3>
+      {/* <h2>User: {user.length} </h2>
+      <h3>Name: {user1[0]?.name}</h3> */}
       <h3>Email: {user.email}</h3>
     </div>
   );

@@ -19,19 +19,19 @@ const Register = () => {
 
   const navigate = useNavigate();
   return (
-    <div className=" login-page w-80 mx-auto mt-10 ">
-      <div className="form bg-green-100 py-5 rounded-md shadow-lg ">
-        <form onSubmit={handleSubmit} className="register-form py-10">
-          <input className="bg-slate-200 p-2 mb-4 outline-none rounded" type="text" placeholder="Name" />
+    <div className="w-80 mx-auto mt-4 -mb-6 ">
+      <div className="form bg-gray-200 py-2 rounded-md shadow-lg ">
+        <form onSubmit={handleSubmit} className="register-form ">
+          <input className="bg-slate-300 p-2 mb-3 outline-none rounded" type="text" placeholder="Name" />
           <br />
-          <input className="bg-slate-200 p-2 mb-4 outline-none rounded" type="email" ref={emailRef} placeholder="Email address" />
+          <input className="bg-slate-300 p-2 mb-3 outline-none rounded" type="email" ref={emailRef} placeholder="Email address" />
           <br />
-          <input className="bg-slate-200 p-2 mb-4 outline-none rounded" type="password" ref={passwordRef} placeholder="Password" />
+          <input className="bg-slate-300 p-2 mb-3 outline-none rounded" type="password" ref={passwordRef} placeholder="Password" />
           <br />
-          <button className="bg-green-400 py-2 px-6 mb-4 rounded-md">Register</button>
-          <p className="message">
+          <button className="bg-gray-800 text-white py-2 px-6 mb-3 rounded-md">Register</button>
+          <p className="mb-2">
             Already registered?{' '}
-            <span className="cursor-pointer text-green-400 font-semibold" onClick={() => navigate('/login')}>
+            <span className="cursor-pointer text-gray-800 font-semibold" onClick={() => navigate('/login')}>
               Sign In
             </span>
           </p>

@@ -29,19 +29,19 @@ const Login = () => {
   }
 
   return (
-    <div className="login-page w-80 mx-auto mt-10">
-      <div className="form bg-green-100 py-5 rounded-md shadow-lg">
+    <div className="login-page w-80 mx-auto mt-8">
+      <div className="form bg-gray-100 py-5 rounded-md shadow-lg">
         <form onSubmit={handleSubmit} className="login-form py-10">
-          <input className="bg-slate-200 p-2 mb-4 outline-none rounded" type="email" ref={emailRef} placeholder="Email address" />
+          <input className="bg-slate-300 p-2 mb-4 outline-none rounded" type="email" ref={emailRef} placeholder="Email address" />
           <br />
           <input className="bg-slate-200 p-2 mb-4 outline-none rounded" type="password" ref={passwordRef} placeholder="Password" />
           <br />
-          <button className="bg-green-400 py-2 px-6 mb-4 rounded-md" type="submit">
+          <button className="bg-gray-800 text-white py-2 px-6 mb-4 rounded-md" type="submit">
             Login
           </button>
           <p className="message">
             Don't Have an Account?{' '}
-            <span className="cursor-pointer text-green-400 font-semibold" onClick={() => navigate('/register')}>
+            <span className="cursor-pointer text-gray-800 font-semibold" onClick={() => navigate('/register')}>
               Create One
             </span>
           </p>
