@@ -1,10 +1,25 @@
-import React from 'react';
-import Carousel from './Carousel/Carousel';
+import React, { useEffect, useState } from 'react';
+import Carousel from '../Carousel/Carousel';
+import HomeInventory from '../HomeInventory/HomeInventory';
 
 const Home = () => {
+  const [inventoryItems, setInventoryItems] = useState([]);
+  useEffect(() => {
+    const url = `https://mighty-tundra-60572.herokuapp.com/inventoryitems`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setInventoryItems(data.slice(1, 7)));
+  }, []);
   return (
     <div>
       <Carousel></Carousel>
+      <h2 className="text-3xl py-10 text-red-500 font-bold">Inventory Items</h2>
+      <h2>Items: {inventoryItems.length}</h2>
+      <div className="flex justify-around flex-wrap">
+        {inventoryItems.map((inventoryItem) => (
+          <HomeInventory key={inventoryItem._id} inventoryItem={inventoryItem}></HomeInventory>
+        ))}
+      </div>
     </div>
   );
 };

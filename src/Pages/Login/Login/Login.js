@@ -29,7 +29,7 @@ const Login = () => {
   }
 
   return (
-    <div className="login-page w-80 mx-auto mt-8">
+    <div className="login-page w-80 mx-auto mt-6">
       <div className="form bg-gray-200 py-4 rounded-md shadow-lg mx-5 mb-12">
         <form onSubmit={handleSubmit} className="login-form py-4">
           <input className="bg-slate-300 p-2 mb-4 outline-none rounded" type="email" ref={emailRef} placeholder="Email address" />
