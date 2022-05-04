@@ -1,42 +1,66 @@
 [
   {
-    "title": "Card Title",
-    "description": "Some quick example text to build on the card title and make up the bul...",
-    "img": "https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+    "title": "SQUARE TABLE WITH CHAIRS",
+    "description": "An elegant wooden table with 4 chairs, foamed seat and cushons... ",
+    "img": "http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/products-images/product2.jpg",
+    "price": "$250",
+    "quantity": 10,
+    "supplier": "Nova Furniture"
   },
   {
-    "title": "Card Title",
-    "description": "Some quick example text to build on the card title and make up the bul...",
-    "img": "https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+    "title": "ROUNDED CORNER SQUARE TABLE",
+    "description": "An premium quality wooden table has rounded corners, well designed and perfect fit for family ",
+    "img": "http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/products-images/product3.jpg",
+    "price": "$400",
+    "quantity": 15,
+    "supplier": "Afab Furniture Mart"
   },
   {
-    "title": "Card Title",
-    "description": "Some quick example text to build on the card title and make up the bul...",
-    "img": "https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+    "title": "SQUARE GLASS TABLE",
+    "description": "An premium quality tempered glass table well designed and perfect fit for family sofa set ",
+    "img": "http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/products-images/product11.jpg",
+    "price": "$260",
+    "quantity": 15,
+    "supplier": "Navana Furniture Mart"
   },
   {
-    "title": "Card Title",
-    "description": "Some quick example text to build on the card title and make up the bul...",
-    "img": "https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+    "title": "ROYAL QULITY SOFA SET",
+    "description": "A sofa set to sit comfortably in any situation, designed well and balanced color that gives premium look... ",
+    "img": "http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/products-images/product23.jpg",
+    "price": "$1020",
+    "quantity": 8,
+    "supplier": "Fakir Furniture Zone"
   },
   {
-    "title": "Card Title",
-    "description": "Some quick example text to build on the card title and make up the bul...",
-    "img": "https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+    "title": "RED-ROUNDED ROLLING CHAIR ",
+    "description": "A chair with premium quality metal build, looks awesome in design and specially for bar type use... ",
+    "img": "http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/products-images/product12.jpg",
+    "price": "$370",
+    "quantity": 20,
+    "supplier": "Tanvir Brothers Furniture"
   },
   {
-    "title": "Card Title",
-    "description": "Some quick example text to build on the card title and make up the bul...",
-    "img": "https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+    "title": "LARGE FAMILY SIZED WAREDROBE",
+    "description": "Wooden waredrobe fit for large family, affordable in price and best fit for house with small capacity. ",
+    "img": "http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/products-images/product24.jpg",
+    "price": "$1200",
+    "quantity": 7,
+    "supplier": "Ohio Zonal Furniture"
   },
   {
-    "title": "Card Title",
-    "description": "Some quick example text to build on the card title and make up the bul...",
-    "img": "https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+    "title": "LARGE TRANSPARENT SHELF",
+    "description": "Wooden white color glassed trnsparent shelf for holding multiple items remaining their look open for your eyes. ",
+    "img": "http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/products-images/product25.jpg",
+    "price": "$850",
+    "quantity": 4,
+    "supplier": "Talukder Furniture"
   },
   {
-    "title": "Card Title",
-    "description": "Some quick example text to build on the card title and make up the bul...",
-    "img": "https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+    "title": "YELLOW-ROUNDED ROLLING CHAIR",
+    "description": "A chair with premium quality metal build, looks awesome in design and specially for bar type use...",
+    "img": "http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/products-images/product22.jpg",
+    "price": "$400",
+    "quantity": 17,
+    "supplier": "Talukder Furniture"
   }
 ]
