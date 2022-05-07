@@ -6,7 +6,7 @@ const InventoryItemDetails = () => {
   const [inventoryItem, setInventoryItem] = useState({});
 
   useEffect(() => {
-    const url = `http://localhost:5000/inventoryItems/${itemsId}`;
+    const url = `https://mighty-tundra-60572.herokuapp.com/inventoryitems/${itemsId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setInventoryItem(data));

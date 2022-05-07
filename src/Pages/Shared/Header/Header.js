@@ -18,8 +18,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              {/* <img className="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow" /> */}
-              <img className="" src="http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/furniture/images/logo.png" alt="Workflow" />
+              <img className="" src="https://i.ibb.co/JCvQC5Y/logo.png" alt="logo" />
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
