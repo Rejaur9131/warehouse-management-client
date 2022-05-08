@@ -16,18 +16,24 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      {/* <h1 className="text-3xl mt-2 text-slate-600 font-bold">Welcome to My Furniture Warehouse</h1> */}
+
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/inventoryitems" element={<ManageInventories></ManageInventories>}></Route>
-        <Route path="/inventoryitems/:itemsId" element={<InventoryItemDetails></InventoryItemDetails>}></Route>
+        <Route
+          path="/inventoryitems/:itemsId"
+          element={
+            <RequireAuth>
+              <InventoryItemDetails></InventoryItemDetails>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
       </Routes>
-
       <Footer></Footer>
     </div>
   );
