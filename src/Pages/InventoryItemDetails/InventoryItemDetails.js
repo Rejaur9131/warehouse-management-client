@@ -35,6 +35,13 @@ const InventoryItemDetails = () => {
           </div>
         </div>
       </div>
+      <form>
+        <label className="text-red-500 text-2xl mb-4" htmlFor="stock">
+          Restock The Items
+        </label>
+        <br />
+        <input className="bg-slate-200 text-center text-xl mt-2" type="number" name="stock" id="" />
+      </form>
       <div className="mb-24 mt-6">
         <Link to="/inventoryitems" className="text-lg text-white italic bg-red-500 px-4 rounded-md py-2">
           Manage Inventories

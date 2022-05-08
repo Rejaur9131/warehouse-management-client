@@ -37,9 +37,22 @@ const Header = () => {
                 </Link>
 
                 {user ? (
-                  <Link to="/login" onClick={handleSignOut} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">
-                    Sign Out
-                  </Link>
+                  <div>
+                    <Link to="/addItems" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">
+                      Add Items
+                    </Link>
+
+                    <Link to="/myItems" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">
+                      My Items
+                    </Link>
+
+                    <Link to="/manageItems" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">
+                      Manage Items
+                    </Link>
+                    <Link to="/login" onClick={handleSignOut} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">
+                      Sign Out
+                    </Link>
+                  </div>
                 ) : (
                   <Link to="/login" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">
                     Login

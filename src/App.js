@@ -11,6 +11,9 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Blogs from './Pages/Blogs/Blogs';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import InventoryItemDetails from './Pages/InventoryItemDetails/InventoryItemDetails';
+import AddItem from './Pages/AddItem/AddItem';
+import ManageItems from './Pages/ManageItems/ManageItems';
+import MyItems from './Pages/MyItems/MyItems';
 
 function App() {
   return (
@@ -23,6 +26,31 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/inventoryitems" element={<ManageInventories></ManageInventories>}></Route>
+        <Route
+          path="/addItems"
+          element={
+            <RequireAuth>
+              <AddItem></AddItem>
+            </RequireAuth>
+          }
+        ></Route>
+
+        <Route
+          path="/myItems"
+          element={
+            <RequireAuth>
+              <MyItems></MyItems>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/manageItems"
+          element={
+            <RequireAuth>
+              <ManageItems></ManageItems>
+            </RequireAuth>
+          }
+        ></Route>
         <Route
           path="/inventoryitems/:itemsId"
           element={
