@@ -1,7 +1,7 @@
-import axios from 'axios';
 import React, { useRef } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
+import Loading from '../../Loading/Loading';
 import auth from './../../../firebase.init';
 
 const Login = () => {
@@ -9,6 +9,7 @@ const Login = () => {
   const passwordRef = useRef('');
   const navigate = useNavigate();
   const location = useLocation();
+  let errorElement;
   const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
 
   let from = location.state?.from?.pathname || '/';
@@ -19,6 +20,14 @@ const Login = () => {
     const password = passwordRef.current.value;
     await signInWithEmailAndPassword(email, password);
   };
+
+  if (loading) {
+    return <Loading></Loading>;
+  }
+
+  if (error) {
+    errorElement = <p className="text-red-500 text-md">{error.message}</p>;
+  }
 
   if (user) {
     navigate(from, { replace: true });
@@ -42,6 +51,7 @@ const Login = () => {
             </span>
           </p>
         </form>
+        {errorElement}
       </div>
     </div>
   );
